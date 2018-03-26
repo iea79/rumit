@@ -1,13 +1,13 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family:								"Century Gothic";
-$main_color:									#000;
+$main_font_family:								"museo-sans",sans-serif;
+$main_color:									#fff;
 $main_line_height:								1.2;
 $main_font_size:								16px;
 
-$container_width:								970px;
+$container_width:								1168px;
 
-$footer_height: 								auto;
+$footer_height: 								235px;
 
 // Color collection for elements
 $color_primary:									#7b8287;
@@ -40,10 +40,10 @@ $grid_padding:									20px;
 // Input variables
 
 // Input color
-$input_color:									$main_color;
-$input_bg_color:								#fff;
-$input_border_color:							#ddd;
-$input_placeholder_color:						#ddd;
+$input_color:									#1e1b1e;
+$input_bg_color:								#f9f7f4;
+$input_border_color:							#dbdbdb;
+$input_placeholder_color:						#666;
 
 // Input hover color
 $input_hover_color:								#fff;

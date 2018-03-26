@@ -1,0 +1,79 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700&subset=cyrillic,cyrillic-ext');
+@font-face {
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather-Light/Merriweather-Light.eot');
+    src: url('../fonts/Merriweather-Light/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather-Light/Merriweather-Light.woff2') format('woff2'),
+        url('../fonts/Merriweather-Light/Merriweather-Light.woff') format('woff'),
+        url('../fonts/Merriweather-Light/Merriweather-Light.ttf') format('truetype'),
+        url('../fonts/Merriweather-Light/Merriweather-Light.svg#Merriweather-Light') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather-Light/Merriweather-LightItalic.eot');
+    src: url('../fonts/Merriweather-Light/Merriweather-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather-Light/Merriweather-LightItalic.woff2') format('woff2'),
+        url('../fonts/Merriweather-Light/Merriweather-LightItalic.woff') format('woff'),
+        url('../fonts/Merriweather-Light/Merriweather-LightItalic.ttf') format('truetype'),
+        url('../fonts/Merriweather-Light/Merriweather-LightItalic.svg#Merriweather-Light') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+// font-family: 'Playfair Display', serif;
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&subset=cyrillic');
+// font-family: "museo-sans";
+// @import url("https://p.typekit.net/p.css?s=1&k=jin6pbv&ht=tk&f=2003.2005.2007.2009.2011&a=4760248&app=typekit&e=css&subset=cyrillic");
+@font-face {
+	font-family:"museo-sans";
+    src: url('../fonts/Museo/MuseoSansCyrl-700.eot');
+    src: url('../fonts/Museo/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/Museo/MuseoSansCyrl-700.ttf') format('truetype'),
+        url('../fonts/Museo/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family:"museo-sans";
+    src: url('../fonts/Museo/MuseoSansCyrl-300.eot');
+    src: url('../fonts/Museo/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/Museo/MuseoSansCyrl-300.ttf') format('truetype'),
+        url('../fonts/Museo/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+	font-family:"museo-sans";
+    src: url('../fonts/Museo/MuseoSansCyrl-100.eot');
+    src: url('../fonts/Museo/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-100.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-100.woff') format('woff'),
+        url('../fonts/Museo/MuseoSansCyrl-100.ttf') format('truetype'),
+        url('../fonts/Museo/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+	font-family:"museo-sans";
+    src: url('../fonts/Museo/MuseoSansCyrl-900.eot');
+    src: url('../fonts/Museo/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Museo/MuseoSansCyrl-900.woff2') format('woff2'),
+        url('../fonts/Museo/MuseoSansCyrl-900.woff') format('woff'),
+        url('../fonts/Museo/MuseoSansCyrl-900.ttf') format('truetype'),
+        url('../fonts/Museo/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.tk-museo-sans { font-family: "museo-sans",sans-serif; }

@@ -11,6 +11,7 @@
     z-index: 1050;
     -webkit-overflow-scrolling: touch;
     outline: 0;
+    color: #404040;
     &-open {
         overflow: hidden;
     }
@@ -26,7 +27,7 @@
             position: absolute;
             display: block;
             width: 20px;
-            border-top: 1px solid $main_color;
+            border-top: 1px solid #404040;
             top: 10px;
         }
         &:before {
@@ -123,7 +124,11 @@
             margin-left: 0;
         }
     }
-
+    @media (max-width: 767px) {
+        &-content {
+            padding: 30px 20px;
+        }
+    }
 }
 
 
