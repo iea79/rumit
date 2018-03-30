@@ -48,8 +48,20 @@ a {
     overflow: hidden;
     height: 100%;
     margin: 0 auto (-$footer_height) auto; // отрицательный нижний отступ на высоту футера
+    &--success {
+    	margin-bottom: -159px;
+    	.main__content {
+    		padding-bottom: 124px;
+    	}
+    }
     @media (max-width: 767px) {
         min-width: auto;
+	    &--success {
+	    	margin-bottom: -185px;
+	    	.main__content {
+	    		padding-bottom: 124px;
+	    	}
+	    }
     }
 }
 
@@ -308,11 +320,38 @@ a {
 	//     	max-width: 500px;
 	//     }
 	// }
+	&--success {
+		background-image: url(../img/success.png);
+		.firstScreen {
+			&__left {
+				max-width: 800px;
+				margin: auto;
+				text-align: center;
+				a {
+					font-weight: 700;
+					text-transform: uppercase;
+					@media (max-width: 767px) {
+					    font-size: 12px;
+					}
+				}
+			}
+			&__title, &__sub {
+				max-width: none;
+			}
+			&__sub {
+				font-style: italic;
+				font-family: Merriweather;
+			}
+		}
+	}
 	@media (max-width: 767px) {
 	    background-image: url(../img/first-bg-xs.png);
 	    background-size: 100%;
 	    padding-top: 297px;
 	    padding-bottom: 930px;
+	    &--success {
+			background-image: url(../img/success-xs.png);
+	    }
 	    &__right {
 			display: none;
 	    }
@@ -841,6 +880,18 @@ a {
 			background-image: url(../img/mail.png);
 			background-position: left 26px center;
 			background-repeat: no-repeat;
+		}
+		&_name {
+			background-image: url(../img/user.png);
+			background-position: left 26px center;
+			background-repeat: no-repeat;
+		}
+		&.invalid {
+			box-shadow: 0 0 10px red;
+			border: 1px solid red;
+			@include placeholder {
+				color: red;
+			}
 		}
 	}
 	.butn {}
@@ -3270,6 +3321,41 @@ a {
 	&__req {
 		span {
 			margin-right: 16px;
+		}
+	}
+	&--success {
+		background-color: transparent;
+		color: #fff;
+		min-height: 100px;
+		.footer {
+			&__left {
+				color: #fff;
+			}
+			&__bottom {
+				color: rgba(#fff, .7);
+			}
+			&__copy {
+				display: block;
+				float: none;
+				margin-bottom: 20px;
+				margin-right: 0;
+			}
+		}
+		@media (max-width: 767px) {
+			.footer {
+			    &__copy {
+			    	position: absolute;
+			    	bottom: 0;
+			    	width: 100%;
+			    	text-align: center;
+			    	left: 0;
+			    	// padding-top: 20px;
+			    }
+				&__bottom {
+					color: rgba(#fff, .7);
+					padding-bottom: 60px;
+				}
+			}
 		}
 	}
 	@media (max-width: 767px) {

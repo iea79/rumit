@@ -14,6 +14,19 @@ if ((isset($_POST['tel']) && $_POST['tel'] != "")) { //Проверка отпр
 	                        <p>Телефон: ' . $_POST['tel'] . '</p>                        
 	                    </body>
 	                </html>'; 
+    } elseif ((isset($_POST['name']) && $_POST['name'] != "")) {
+    	$subject = 'Перезвонить'; //Заголовок сообщения
+
+	    $message = '
+	                <html>
+	                    <head>
+	                        <title>' . $subject . '</title>
+	                    </head>
+	                    <body>
+	                        <p>Имя: ' . $_POST['name'] . '</p>
+	                        <p>Телефон: ' . $_POST['tel'] . '</p>                        
+	                    </body>
+	                </html>'; 
     } else {
     	$subject = 'Обратный звонок'; //Заголовок сообщения
 

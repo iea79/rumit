@@ -137,22 +137,28 @@ $(document).ready(function() {
     	var form = $(this).closest('form');
     	var url = form.attr('action');
         var form_data = form.serialize();
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: form_data,
-            success: function () {
-                // var mess = res == 'success'? 'Ваше сообщение отправлено!':'Что то пошло не так';
-                // alert(mess);
-                // if (form.hasClass('download__form')) {
-                // 	$('#downloadLink').trigger('click');
+        var field = form.find('[required]');
+        if (field.val() == "") {
+        	field.addClass('invalid');
+        	return false;
+        } else {    	
+	        $.ajax({
+	            type: "POST",
+	            url: url,
+	            data: form_data,
+	            success: function () {
+	                // var mess = res == 'success'? 'Ваше сообщение отправлено!':'Что то пошло не так';
+	                // alert(mess);
+	                // if (form.hasClass('download__form')) {
+	                // 	$('#downloadLink').trigger('click');
 
-                // } else {
-                	form.submit();
-                	document.location.href = 'success.html';
-                // }
-            }
-        });
+	                // } else {
+	                	form.submit();
+	                	document.location.href = 'success.html';
+	                // }
+	            }
+	        });
+        }
     });
 
 });
